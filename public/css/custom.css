@@ -17,12 +17,38 @@ footer {
   padding: 10px 30px;
 }
 
+A:link {
+  color: rgb(84, 84, 95)
+}
+
+A:visited {
+  color: rgb(84, 84, 95)
+}
+
+A:active {
+  color: rgb(84, 84, 95)
+}
+
+A:hover {
+  color: rgb(84, 84, 95)
+}
+
 a img {
-  opacity: 0.75;
+  opacity: 0.25;
+  filter: grayscale(1);
 }
 
 a img:hover {
-  opacity: 3;
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
 }
 
 .social-icon {
