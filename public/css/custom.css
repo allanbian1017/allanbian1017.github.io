@@ -9,6 +9,28 @@ body {
   text-align: center;
 }
 
+footer {
+  float: right;
+  height: 70px;
+  margin: 0px 50px 0px 0px;
+  text-align: right;
+  padding: 10px 30px;
+}
+
+a img {
+  opacity: 0.75;
+}
+
+a img:hover {
+  opacity: 3;
+}
+
+.social-icon {
+  width: 37px;
+  height: 37px;
+  padding: 5px 5px;
+}
+
 .site-wrapper {
   display: table;
   width: 100%;
