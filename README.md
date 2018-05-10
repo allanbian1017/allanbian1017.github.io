@@ -1,3 +1,3 @@
 # Allan Bian's Page
 
-Please visit: https://allanbian1017.github.io/ to view the site.
+Please visit: https://www.allanbian.me/ to view the site.
