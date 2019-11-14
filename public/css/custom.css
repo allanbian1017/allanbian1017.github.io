@@ -11,9 +11,9 @@ body {
 
 footer {
   float: right;
-  height: 70px;
-  margin: 0px 50px 0px 0px;
-  text-align: right;
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
   padding: 10px 30px;
 }
 
@@ -43,12 +43,22 @@ a img:hover {
   filter: grayscale(0);
 }
 
+.container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.box{
+  width: 25%;
+}
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: right;
 }
 
 .social-icon {
@@ -74,7 +84,15 @@ a img:hover {
   margin-left: auto;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 400px) {
+  .box{
+    width: 13%;
+  }
+  .footer{
+    height: 70px;
+    margin: 0px 50px 0px 0px;
+    text-align: right;
+  }
   .site-wrapper-inner {
     vertical-align: middle;
   }
