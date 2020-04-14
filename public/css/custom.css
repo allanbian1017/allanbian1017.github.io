@@ -16,6 +16,23 @@ footer {
   padding: 10px 30px;
 }
 
+A:link {	
+  color: rgb(84, 84, 95)	
+}	
+
+A:visited {	
+  color: rgb(84, 84, 95)	
+}	
+
+A:active {	
+  color: rgb(84, 84, 95)	
+}	
+
+A:hover {	
+  color: rgb(84, 84, 95)	
+}	
+
+
 .main-body {
   background-color: #333;
 }
