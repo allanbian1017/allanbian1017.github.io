@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  background-color: #bab4b5;
 }
 
 body {
@@ -15,6 +14,10 @@ footer {
   margin: 0px 0px 0px 0px;
   text-align: center;
   padding: 10px 30px;
+}
+
+.yt-main-body {
+  background-color: #bab4b5;
 }
 
 .container{
