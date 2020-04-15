@@ -37,10 +37,6 @@ A:hover {
   background-color: #333;
 }
 
-.yt-main-body {
-  background-color: #bab4b5;
-}
-
 .container{
   width: 100%;
   display: flex;
@@ -87,6 +83,14 @@ A:hover {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+}
+
+.yt-main-body {
+  background-color: #bab4b5;
+}
+
+.yt-box{
+  width: 33%;
 }
 
 @media (min-width: 400px) {
