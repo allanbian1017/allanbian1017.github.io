@@ -37,6 +37,10 @@ A:hover {
   background-color: #333;
 }
 
+.github-stats {
+  align-content: center;
+}
+
 .container{
   width: 100%;
   display: flex;
