@@ -97,6 +97,13 @@ A:hover {
   width: 33%;
 }
 
+.LI-profile-badge {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
 @media (min-width: 400px) {
   .box{
     width: 12%;
