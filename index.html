@@ -18,11 +18,10 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- LinkedIn Badge -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <!-- End LinkedIn Badge -->
-
     <link rel="icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <link href="public/css/custom.css" rel="stylesheet">
 </head>
@@ -39,8 +38,36 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <main>
-                    <h1>Hello!</h1>
-                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="allanbian" data-version="v1"></div>
+                    <h1 class="greeting">Hello!</h1>
+                    <div class="linkedin-card-container">
+                        <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="linkedin-card-link">
+                            <div class="linkedin-card">
+                                <div class="linkedin-card-bg-glow"></div>
+                                <div class="linkedin-card-content">
+                                    <div class="linkedin-card-header">
+                                        <div class="linkedin-avatar-container">
+                                            <img class="linkedin-avatar" src="https://github.com/allanbian1017.png" alt="Tse Lun Bien" onerror="this.src='img/LinkedIn.png'">
+                                            <div class="linkedin-mini-badge">
+                                                <svg viewBox="0 0 24 24" class="linkedin-svg-icon" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="linkedin-card-body">
+                                        <h2 class="linkedin-name">Tse Lun Bien</h2>
+                                        <p class="linkedin-title">Lead Backend Engineer @ Carousell</p>
+                                        <span class="linkedin-btn">
+                                            <span>View Profile</span>
+                                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </main>
             </div>
             <div class="footer">

@@ -97,11 +97,187 @@ A:hover {
   width: 33%;
 }
 
-.LI-profile-badge {
-  display: flex !important;
-  justify-content: center !important;
-  margin: 0 auto !important;
-  text-align: center !important;
+/* Custom LinkedIn Card Styling */
+.linkedin-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  perspective: 1000px;
+}
+
+.linkedin-card-link {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+}
+
+.linkedin-card {
+  position: relative;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px 24px;
+  text-align: center;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              border-color 0.4s ease,
+              box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+/* Hover effects for card */
+.linkedin-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(10, 102, 194, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+              0 0 20px rgba(10, 102, 194, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Background glow effect */
+.linkedin-card-bg-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(10, 102, 194, 0.15) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.linkedin-card:hover .linkedin-card-bg-glow {
+  opacity: 1;
+}
+
+.linkedin-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Avatar styling */
+.linkedin-avatar-container {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 20px;
+}
+
+.linkedin-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.linkedin-card:hover .linkedin-avatar {
+  transform: scale(1.05);
+  border-color: #0a66c2;
+}
+
+/* Mini badge inside avatar */
+.linkedin-mini-badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background: #0a66c2;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333; /* Matches body background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.linkedin-card:hover .linkedin-mini-badge {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.linkedin-svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+/* Card Body text */
+.linkedin-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.3px;
+  transition: color 0.3s ease;
+}
+
+.linkedin-card:hover .linkedin-name {
+  color: #0a66c2;
+}
+
+.linkedin-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 24px 0;
+  line-height: 1.4;
+}
+
+/* Button CTA styling */
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(10, 102, 194, 0.1);
+  border: 1px solid rgba(10, 102, 194, 0.3);
+  padding: 10px 24px;
+  border-radius: 30px;
+  color: #0a66c2;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-card:hover .linkedin-btn {
+  background: #0a66c2;
+  border-color: #0a66c2;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+}
+
+.linkedin-card:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.greeting {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
 }
 
 @media (min-width: 400px) {
