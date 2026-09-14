@@ -319,7 +319,7 @@ body {
 }
 
 .section-header {
-    margin-bottom: 28px;
+    margin-bottom: 36px;
     text-align: left;
 }
 
@@ -336,9 +336,64 @@ body {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.55);
     margin: 0;
+    max-width: 760px;
+    line-height: 1.6;
 }
 
-/* --- Flagship Card: Code Review Skill --- */
+/* --- Thematic Tracks --- */
+.track-container {
+    margin-bottom: 52px;
+}
+
+.track-container:last-child {
+    margin-bottom: 0;
+}
+
+.track-header {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.track-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.track-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+}
+
+.track-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+}
+
+.projects-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* --- Flagship Card: Engineering & Intelligence Skills --- */
 .flagship-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.09);
@@ -357,6 +412,21 @@ body {
     transform: translateY(-2px);
 }
 
+.card-amber:hover {
+    border-color: rgba(245, 158, 11, 0.4);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(245, 158, 11, 0.14);
+}
+
+.card-emerald:hover {
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(16, 185, 129, 0.14);
+}
+
+.card-purple:hover {
+    border-color: rgba(192, 132, 252, 0.4);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(192, 132, 252, 0.14);
+}
+
 .card-topbar {
     display: flex;
     align-items: center;
@@ -364,6 +434,49 @@ body {
     margin-bottom: 18px;
     flex-wrap: wrap;
     gap: 12px;
+}
+
+.card-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.phase-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phase-01 {
+    color: #fbbf24;
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.phase-02 {
+    color: #34d399;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.phase-03 {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.phase-kl {
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.12);
+    border: 1px solid rgba(192, 132, 252, 0.3);
 }
 
 .repo-meta {
@@ -489,6 +602,33 @@ body {
     padding: 3px 10px;
     border-radius: 6px;
     border: 1px solid rgba(167, 139, 250, 0.25);
+}
+
+.val-amber {
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.1);
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.val-cyan {
+    color: #22d3ee;
+    background: rgba(34, 211, 238, 0.1);
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(34, 211, 238, 0.25);
+}
+
+.repo-meta-purple {
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.08);
+    border: 1px solid rgba(192, 132, 252, 0.25);
+}
+
+.repo-meta-purple:hover {
+    background: rgba(192, 132, 252, 0.16);
+    color: #e9d5ff;
 }
 
 .card-actions {
@@ -738,5 +878,20 @@ body {
 
     .profile-name {
         font-size: 28px;
+    }
+
+    .track-title {
+        font-size: 20px;
+    }
+
+    .scorecard-panel {
+        padding: 16px 14px;
+        font-size: 12px;
+    }
+
+    .scorecard-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 }
