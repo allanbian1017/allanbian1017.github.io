@@ -21,7 +21,7 @@
     <link rel="icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <link href="public/css/custom.css" rel="stylesheet">
 </head>
@@ -33,86 +33,156 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <main>
-                    <h1 class="greeting">Hello!</h1>
-                    <div class="linkedin-card-container">
-                        <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="linkedin-card-link">
-                            <div class="linkedin-card">
-                                <div class="linkedin-card-bg-glow"></div>
-                                <div class="linkedin-card-content">
-                                    <div class="linkedin-card-header">
-                                        <div class="linkedin-avatar-container">
-                                            <img class="linkedin-avatar" src="https://github.com/allanbian1017.png" alt="Tse Lun Bien" onerror="this.src='img/LinkedIn.png'">
-                                            <div class="linkedin-mini-badge">
-                                                <svg viewBox="0 0 24 24" class="linkedin-svg-icon" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z"/>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="linkedin-card-body">
-                                        <h2 class="linkedin-name">Tse Lun Bien</h2>
-                                        <p class="linkedin-title">Lead Backend Engineer @ Carousell</p>
-                                        <span class="linkedin-btn">
-                                            <span>View Profile</span>
-                                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>
-                                    </div>
+
+    <!-- Ambient Background Glow -->
+    <div class="bg-glow-container">
+        <div class="bg-glow-1"></div>
+        <div class="bg-glow-2"></div>
+    </div>
+
+    <div class="site-container">
+        <!-- Hero Section (Above the fold: Instant Recruiter Calibration) -->
+        <section class="hero-section">
+            <h1 class="greeting">Hello!</h1>
+
+            <div class="linkedin-card-container">
+                <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="linkedin-card-link">
+                    <div class="linkedin-card">
+                        <div class="linkedin-card-bg-glow"></div>
+                        <div class="linkedin-card-content">
+                            <div class="linkedin-avatar-container">
+                                <img class="linkedin-avatar" src="https://github.com/allanbian1017.png" alt="Tse Lun Bien" onerror="this.src='img/LinkedIn.png'">
+                                <div class="linkedin-mini-badge">
+                                    <svg viewBox="0 0 24 24" class="linkedin-svg-icon" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
+                            <h2 class="linkedin-name">Tse Lun Bien</h2>
+                            <p class="linkedin-title">Lead Backend Engineer @ Carousell</p>
+                            <span class="linkedin-btn">
+                                <span>View Profile</span>
+                                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
                     </div>
-                </main>
+                </a>
             </div>
-            <div class="footer">
-                <footer>
-                    <div class="container">
 
-                        <div class="box">
-                            <a target="_blank" href="https://github.com/allanbian1017">
-                                <img class="social-icon" src="img/GitHub.png" />
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a target="_blank" href="https://allanbian.notion.site/me">
-                                <img class="social-icon" src="img/Notion.png" />
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a target="_blank" href="https://gitlab.com/allanbian1017">
-                                <img class="social-icon" src="img/GitLab.png" />
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a target="_blank" href="https://www.facebook.com/allanbian">
-                                <img class="social-icon" src="img/Facebook.png" />
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a target="_blank" href="https://www.instagram.com/allan_bian/">
-                                <img class="social-icon" src="img/Instagram.png" />
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a target="_blank" href="https://www.youtube.com/channel/UCthX05gRaSSk8W6k0tMI-vw">
-                                <img class="social-icon" src="img/YouTube.png" />
-                            </a>
-                        </div>
-                        <div class="box">
-                            <a target="_blank" href="https://medium.com/@allanbian">
-                                <img class="social-icon" src="img/Medium.png" />
-                            </a>
-                        </div>
-                    </div>
-                </footer>
+            <!-- Scroll Cue to Projects -->
+            <div class="scroll-cue-container">
+                <a href="#projects" class="scroll-cue">
+                    <span>Featured Projects</span>
+                    <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
-        </div>
+        </section>
+
+        <!-- Featured Projects Section (Below the fold: Hiring Manager Proof-of-Work) -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">Open-source agent skill for automated, multi-dimensional code quality & preference learning.</p>
+            </div>
+
+            <!-- Flagship Project: Code Review Skill -->
+            <div class="flagship-card">
+                <div class="card-topbar">
+                    <a href="https://github.com/allanbian1017/skills/tree/main/skills/development/code-review" target="_blank" class="repo-meta">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>allanbian1017/skills</span>
+                    </a>
+                    <div class="badge-list">
+                        <span class="pill-badge">Agent Skill</span>
+                        <span class="pill-badge">Polyglot PR Routing</span>
+                        <span class="pill-badge">Continuous Learning</span>
+                        <span class="pill-badge">GitHub Native</span>
+                    </div>
+                </div>
+
+                <h3 class="project-title">Code Review Skill</h3>
+                <p class="project-summary">
+                    Comprehensive multi-dimensional code quality & preference learning agent capability. 
+                    Enforces language-specific style via hybrid rubrics, validates specification compliance against RFCs and plans, 
+                    and continuously learns team conventions directly from GitHub Pull Request review comments into persistent memory.
+                </p>
+
+                <!-- Live Scorecard Demo -->
+                <div class="scorecard-panel">
+                    <div class="scorecard-header">
+                        <span>Review Dimension</span>
+                        <span>Verification Status / Metric</span>
+                    </div>
+                    <div class="scorecard-row">
+                        <div class="scorecard-label">
+                            <span>📋 Spec Compliance</span>
+                        </div>
+                        <div class="scorecard-val val-pass">RFC-084 Idempotency [VERIFIED]</div>
+                    </div>
+                    <div class="scorecard-row">
+                        <div class="scorecard-label">
+                            <span>📐 Style Rubric</span>
+                        </div>
+                        <div class="scorecard-val val-score">Uber Go Guidelines [96 / 100]</div>
+                    </div>
+                    <div class="scorecard-row">
+                        <div class="scorecard-label">
+                            <span>🧠 Preference Memory</span>
+                        </div>
+                        <div class="scorecard-val val-memory">2 team conventions applied (preferences.md)</div>
+                    </div>
+                    <div class="scorecard-row">
+                        <div class="scorecard-label">
+                            <span>⚡ Native Tooling</span>
+                        </div>
+                        <div class="scorecard-val" style="color: rgba(255,255,255,0.7);">$ gh pr review --comment & inline high-severity</div>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <a href="https://github.com/allanbian1017/skills/tree/main/skills/development/code-review" target="_blank" class="btn-primary-action">
+                        <span>View Repository</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="https://github.com/allanbian1017/skills/blob/main/skills/development/code-review/SKILL.md" target="_blank" class="btn-secondary-action">
+                        <span>Read SKILL.md</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer with Original 7 Social Icons -->
+        <footer class="site-footer">
+            <p class="footer-credit">Allan Bian · Tse Lun Bien</p>
+            <div class="social-icons-wrapper">
+                <a target="_blank" href="https://github.com/allanbian1017" title="GitHub">
+                    <img class="social-icon" src="img/GitHub.png" alt="GitHub" />
+                </a>
+                <a target="_blank" href="https://allanbian.notion.site/me" title="Notion">
+                    <img class="social-icon" src="img/Notion.png" alt="Notion" />
+                </a>
+                <a target="_blank" href="https://gitlab.com/allanbian1017" title="GitLab">
+                    <img class="social-icon" src="img/GitLab.png" alt="GitLab" />
+                </a>
+                <a target="_blank" href="https://www.facebook.com/allanbian" title="Facebook">
+                    <img class="social-icon" src="img/Facebook.png" alt="Facebook" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/allan_bian/" title="Instagram">
+                    <img class="social-icon" src="img/Instagram.png" alt="Instagram" />
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCthX05gRaSSk8W6k0tMI-vw" title="YouTube">
+                    <img class="social-icon" src="img/YouTube.png" alt="YouTube" />
+                </a>
+                <a target="_blank" href="https://medium.com/@allanbian" title="Medium">
+                    <img class="social-icon" src="img/Medium.png" alt="Medium" />
+                </a>
+            </div>
+        </footer>
     </div>
 </body>
 
