@@ -41,46 +41,80 @@
     </div>
 
     <div class="site-container">
-        <!-- Hero Section (Above the fold: Instant Recruiter Calibration) -->
+        <!-- Hero Section (Visual First Impression: Personal Artwork + Profile) -->
         <section class="hero-section">
-            <h1 class="greeting">Hello!</h1>
-
-            <div class="linkedin-card-container">
-                <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="linkedin-card-link">
-                    <div class="linkedin-card">
-                        <div class="linkedin-card-bg-glow"></div>
-                        <div class="linkedin-card-content">
-                            <div class="linkedin-avatar-container">
-                                <img class="linkedin-avatar" src="https://github.com/allanbian1017.png" alt="Tse Lun Bien" onerror="this.src='img/LinkedIn.png'">
-                                <div class="linkedin-mini-badge">
-                                    <svg viewBox="0 0 24 24" class="linkedin-svg-icon" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h2 class="linkedin-name">Tse Lun Bien</h2>
-                            <p class="linkedin-title">Lead Backend Engineer @ Carousell</p>
-                            <span class="linkedin-btn">
-                                <span>View Profile</span>
-                                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
+            <div class="hero-layout">
+                <!-- Left: Poster Showcase -->
+                <div class="hero-poster-col">
+                    <div class="poster-glow-container" aria-hidden="true">
+                        <div class="poster-glow-amber"></div>
+                        <div class="poster-glow-cyan"></div>
+                    </div>
+                    <div class="poster-frame" id="posterTrigger" role="button" tabindex="0" aria-label="View full poster artwork in high resolution">
+                        <img 
+                            src="img/photo.png" 
+                            alt="Allan Bian - Build a Kinder Tech World" 
+                            class="poster-image"
+                            width="1024"
+                            height="1536"
+                            fetchpriority="high"
+                            loading="eager"
+                        >
+                        <div class="poster-overlay-hint" aria-hidden="true" title="Click to view full artwork">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            <!-- Scroll Cue to Projects -->
-            <div class="scroll-cue-container">
-                <a href="#projects" class="scroll-cue">
-                    <span>Featured Projects</span>
-                    <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
+                <!-- Right: Minimalist Profile Info -->
+                <div class="hero-info-col">
+                    <h1 class="greeting">Hello!</h1>
+                    <h2 class="profile-name">Allan Bian</h2>
+                    <p class="profile-title">Lead Backend Engineer @ Carousell</p>
+
+                    <div class="hero-actions">
+                        <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="btn-linkedin" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" class="btn-linkedin-icon" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z"/>
+                            </svg>
+                            <span>View LinkedIn Profile</span>
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Scroll Cue to Projects -->
+                    <div class="scroll-cue-container">
+                        <a href="#projects" class="scroll-cue">
+                            <span>Featured Projects</span>
+                            <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Lightbox Modal for Full-Resolution Artwork Inspection -->
+        <div id="posterLightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Full poster artwork preview">
+            <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+            <div class="lightbox-content">
+                <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close full view">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <img src="img/photo.png" alt="Allan Bian - Build a Kinder Tech World" class="lightbox-img">
+            </div>
+        </div>
 
         <!-- Featured Projects Section (Below the fold: Hiring Manager Proof-of-Work) -->
         <section id="projects" class="projects-section">
@@ -184,6 +218,7 @@
             </div>
         </footer>
     </div>
+    <script src="public/js/main.js"></script>
 </body>
 
 </html>
