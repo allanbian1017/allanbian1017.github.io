@@ -427,6 +427,11 @@ body {
     box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(192, 132, 252, 0.14);
 }
 
+.card-indigo:hover {
+    border-color: rgba(129, 140, 248, 0.4);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(129, 140, 248, 0.14);
+}
+
 .card-topbar {
     display: flex;
     align-items: center;
@@ -477,6 +482,12 @@ body {
     color: #c084fc;
     background: rgba(192, 132, 252, 0.12);
     border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+.phase-04 {
+    color: #818cf8;
+    background: rgba(129, 140, 248, 0.12);
+    border: 1px solid rgba(129, 140, 248, 0.3);
 }
 
 .repo-meta {
@@ -618,6 +629,14 @@ body {
     padding: 3px 10px;
     border-radius: 6px;
     border: 1px solid rgba(34, 211, 238, 0.25);
+}
+
+.val-indigo {
+    color: #818cf8;
+    background: rgba(129, 140, 248, 0.1);
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(129, 140, 248, 0.25);
 }
 
 .repo-meta-purple {
