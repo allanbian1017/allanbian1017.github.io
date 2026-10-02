@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="allanbian">
 
-    <title>Allan Bian / Tse Lun Bien</title>
+    <title>Allan Bian · Tse Lun Bien</title>
+    <meta name="description" content="Lead Software Engineer at Carousell. Building autonomous AI agent systems for software engineering — from planning and architecture review to implementation, code quality, and living documentation.">
 
     <!-- Google Tag Manager -->
     <script>
@@ -40,9 +41,32 @@
         <div class="bg-glow-2"></div>
     </div>
 
+    <!-- Floating Wayfinding Dock -->
+    <header class="nav-dock-container" id="navDock">
+        <nav class="nav-dock" aria-label="Main Navigation">
+            <a href="#hero" class="nav-dock-brand" aria-label="Allan Bian · Tse Lun Bien - Back to top">
+                <span class="brand-name">Allan Bian · Tse Lun Bien</span>
+            </a>
+            <div class="nav-dock-menu">
+                <a href="#projects" class="nav-dock-link" data-section="projects">Projects</a>
+                <a href="#philosophy" class="nav-dock-link" data-section="philosophy">Why I Build</a>
+                <a href="#about" class="nav-dock-link" data-section="about">About</a>
+                <a href="#experience" class="nav-dock-link" data-section="experience">Contact</a>
+            </div>
+            <div class="nav-dock-actions">
+                <a href="https://allanbian.notion.site/me" target="_blank" rel="noopener noreferrer" class="nav-dock-cta">
+                    <span>Resume</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
     <div class="site-container">
         <!-- Hero Section (Visual First Impression: Personal Artwork + Profile) -->
-        <section class="hero-section">
+        <section id="hero" class="hero-section">
             <div class="hero-layout">
                 <!-- Left: Poster Showcase -->
                 <div class="hero-poster-col">
@@ -76,29 +100,42 @@
                     <h1 class="greeting">Hello!</h1>
                     <h2 class="profile-name">Allan Bian</h2>
                     <p class="profile-title">Lead Software Engineer, Backend @ Carousell</p>
+                    <p class="hero-tagline"></p>
 
                     <div class="hero-actions">
-                        <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="btn-linkedin" rel="noopener noreferrer">
-                            <svg viewBox="0 0 24 24" class="btn-linkedin-icon" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="btn-hero-link" rel="noopener noreferrer">
+                            <svg class="btn-hero-icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z"/>
                             </svg>
-                            <span>View LinkedIn Profile</span>
-                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <span>LinkedIn</span>
                         </a>
-                    </div>
-
-                    <!-- Scroll Cue to Projects -->
-                    <div class="scroll-cue-container">
-                        <a href="#projects" class="scroll-cue">
-                            <span>Featured Projects</span>
-                            <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <a href="https://allanbian.notion.site/me" target="_blank" class="btn-hero-link btn-hero-secondary" rel="noopener noreferrer">
+                            <svg class="btn-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
                             </svg>
+                            <span>Resume</span>
+                        </a>
+                        <a href="https://github.com/allanbian1017" target="_blank" class="btn-hero-link btn-hero-secondary" rel="noopener noreferrer">
+                            <svg class="btn-hero-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Grounded Viewport Scroll Cue -->
+            <div class="hero-scroll-cue">
+                <a href="#projects" class="scroll-prompt" aria-label="Scroll to featured projects">
+                    <span class="scroll-prompt-label">Featured Projects</span>
+                    <div class="scroll-mouse-icon" aria-hidden="true">
+                        <span class="scroll-mouse-wheel"></span>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -120,7 +157,7 @@
         <section id="projects" class="projects-section">
             <div class="section-header">
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-desc">Open-source agent systems and developer skills for autonomous engineering lifecycles, narrative development history, and content intelligence.</p>
+                <p class="section-desc">Open-source AI agent systems I've built to explore how autonomous agents can participate across the full software delivery lifecycle.</p>
             </div>
 
             <!-- Track 1: Autonomous Engineering Pipeline -->
@@ -500,29 +537,143 @@
             </div>
         </section>
 
-        <!-- Footer with Original 7 Social Icons -->
+        <!-- Why I'm Building This -->
+        <section id="philosophy" class="narrative-section why-section">
+            <div class="narrative-grid">
+                <div class="narrative-sidebar">
+                    <span class="narrative-kicker">What I’m exploring</span>
+                    <h2 class="narrative-heading">Why I’m building this</h2>
+                    <p class="narrative-aside">Some thoughts behind what I’ve been building and what I’ve learned along the way.</p>
+                </div>
+                <div class="narrative-main">
+                    <p class="narrative-question">What changes when AI becomes an engineering collaborator rather than just a coding tool?</p>
+                    <p class="narrative-body">
+                        Most AI coding tools focus on helping us write code faster. I’m interested in exploring a broader question: can agents participate across the software development lifecycle — understanding requirements, reviewing architecture, implementing changes, maintaining quality, and preserving knowledge as the system evolves?
+                    </p>
+                    <p class="narrative-body">
+                        The projects above are experiments around this question. While building them, a few ideas have become increasingly important to me.
+                    </p>
+                    <div class="insight-grid">
+                        <div class="insight-item">
+                            <h3 class="insight-title">Planning matters more than code generation</h3>
+                            <p class="insight-body">
+                                Many important engineering decisions happen before implementation starts. Requirements need to be clarified, assumptions challenged, architecture reviewed, and trade-offs understood.
+                            </p>
+                            <p class="insight-body">
+                                That’s why I started by building agents around feature planning and architecture review rather than focusing only on code generation. If an agent can implement quickly but starts from the wrong assumptions or design, writing code faster doesn’t help much.
+                            </p>
+                        </div>
+                        <div class="insight-item">
+                            <h3 class="insight-title">Documentation should evolve with the codebase</h3>
+                            <p class="insight-body">
+                                Documentation becomes outdated easily when maintaining it is separate from the development workflow.
+                            </p>
+                            <p class="insight-body">
+                                I’m exploring whether agents can help maintain living documentation that evolves alongside the codebase — capturing not only what the system looks like today, but also why decisions were made, how the architecture changed, and what we learned along the way.
+                            </p>
+                        </div>
+                        <div class="insight-item">
+                            <h3 class="insight-title">Evaluation is an engineering problem</h3>
+                            <p class="insight-body">
+                                As I gave agents more responsibility, I found that generating an output was only part of the problem. I also needed a reliable way to determine whether that output was actually correct and stayed within the intended scope.
+                            </p>
+                            <p class="insight-body">
+                                That’s why the skills I build include verification mechanisms such as rubric-based evaluation, scope enforcement, and phantom commit audits. I see evaluation and guardrails as part of the system design itself: if an agent is going to participate meaningfully in engineering work, its output needs to be verifiable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond the Code -->
+        <section id="about" class="narrative-section personal-section">
+            <div class="narrative-grid">
+                <div class="narrative-sidebar">
+                    <span class="narrative-kicker">Outside of work</span>
+                    <h2 class="narrative-heading">Beyond the code</h2>
+                    <p class="narrative-aside">A little more about what I enjoy outside of software.</p>
+                </div>
+                <div class="narrative-main">
+                    <p class="narrative-question">
+                        I like understanding how things work — systems, people, and increasingly, AI.
+                    </p>
+                    <p class="narrative-body">
+                        Outside of software, I enjoy freediving, camping, and spending time outdoors. Freediving in particular has influenced how I think about engineering. Underwater, staying calm matters. You need to understand the environment, use your energy carefully, and avoid unnecessary movement.
+                    </p>
+                    <p class="narrative-body">
+                        I find myself applying a similar mindset to engineering: understand the problem first, keep things as simple as possible, and focus your effort where it actually matters.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Story Handoff -->
+        <section id="experience" class="narrative-section handoff-section">
+            <div class="narrative-grid">
+                <div class="narrative-sidebar">
+                    <span class="narrative-kicker">Work</span>
+                    <h2 class="narrative-heading">Professional experience</h2>
+                    <p class="narrative-aside">More about my work experience, past projects, and how to reach me.</p>
+                </div>
+                <div class="narrative-main handoff-content">
+                    <p class="narrative-question">Looking for my professional experience?</p>
+                    <p class="narrative-body">
+                        You can find more about my work experience and the projects I’ve worked on through LinkedIn or my resume.
+                    </p>
+                    <div class="handoff-actions">
+                        <a href="https://www.linkedin.com/in/allanbian/" target="_blank" class="btn-handoff btn-handoff-linkedin" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" class="btn-handoff-icon" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.1H5.2v8.4H8z" fill="currentColor"/>
+                            </svg>
+                            <span>Connect on LinkedIn</span>
+                            <svg class="btn-handoff-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://allanbian.notion.site/me" target="_blank" class="btn-handoff btn-handoff-resume" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" class="btn-handoff-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>View Full Resume</span>
+                            <svg class="btn-handoff-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Social Icons -->
         <footer class="site-footer">
             <p class="footer-credit">Allan Bian · Tse Lun Bien</p>
             <div class="social-icons-wrapper">
-                <a target="_blank" href="https://github.com/allanbian1017" title="GitHub">
+                <a target="_blank" href="https://github.com/allanbian1017" title="GitHub" rel="noopener noreferrer">
                     <img class="social-icon" src="img/GitHub.png" alt="GitHub" />
                 </a>
-                <a target="_blank" href="https://allanbian.notion.site/me" title="Notion">
+                <a target="_blank" href="https://www.linkedin.com/in/allanbian/" title="LinkedIn" rel="noopener noreferrer">
+                    <img class="social-icon" src="img/LinkedIn.png" alt="LinkedIn" />
+                </a>
+                <a target="_blank" href="https://allanbian.notion.site/me" title="Notion" rel="noopener noreferrer">
                     <img class="social-icon" src="img/Notion.png" alt="Notion" />
                 </a>
-                <a target="_blank" href="https://gitlab.com/allanbian1017" title="GitLab">
+                <a target="_blank" href="https://gitlab.com/allanbian1017" title="GitLab" rel="noopener noreferrer">
                     <img class="social-icon" src="img/GitLab.png" alt="GitLab" />
                 </a>
-                <a target="_blank" href="https://www.facebook.com/allanbian" title="Facebook">
+                <a target="_blank" href="https://www.facebook.com/allanbian" title="Facebook" rel="noopener noreferrer">
                     <img class="social-icon" src="img/Facebook.png" alt="Facebook" />
                 </a>
-                <a target="_blank" href="https://www.instagram.com/allan_bian/" title="Instagram">
+                <a target="_blank" href="https://www.instagram.com/allan_bian/" title="Instagram" rel="noopener noreferrer">
                     <img class="social-icon" src="img/Instagram.png" alt="Instagram" />
                 </a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCthX05gRaSSk8W6k0tMI-vw" title="YouTube">
+                <a target="_blank" href="https://www.youtube.com/channel/UCthX05gRaSSk8W6k0tMI-vw" title="YouTube" rel="noopener noreferrer">
                     <img class="social-icon" src="img/YouTube.png" alt="YouTube" />
                 </a>
-                <a target="_blank" href="https://medium.com/@allanbian" title="Medium">
+                <a target="_blank" href="https://medium.com/@allanbian" title="Medium" rel="noopener noreferrer">
                     <img class="social-icon" src="img/Medium.png" alt="Medium" />
                 </a>
             </div>
