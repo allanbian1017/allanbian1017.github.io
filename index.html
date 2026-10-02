@@ -130,8 +130,8 @@
 
             <!-- Grounded Viewport Scroll Cue -->
             <div class="hero-scroll-cue">
-                <a href="#projects" class="scroll-prompt" aria-label="Scroll to featured projects">
-                    <span class="scroll-prompt-label">Featured Projects</span>
+                <a href="#projects" class="scroll-prompt" aria-label="Scroll to projects">
+                    <span class="scroll-prompt-label">Projects</span>
                     <div class="scroll-mouse-icon" aria-hidden="true">
                         <span class="scroll-mouse-wheel"></span>
                     </div>
@@ -156,8 +156,8 @@
         <!-- Featured Projects Section -->
         <section id="projects" class="projects-section">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-desc">Open-source AI agent systems I've built to explore how autonomous agents can participate across the full software delivery lifecycle.</p>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-desc">Things I’ve been building and experimenting with around AI agents and software engineering.</p>
             </div>
 
             <!-- Track 1: Autonomous Engineering Pipeline -->
@@ -165,7 +165,7 @@
                 <div class="track-header">
                     <span class="track-badge">Track 01 · Software Delivery</span>
                     <h3 class="track-title">Autonomous Engineering Pipeline</h3>
-                    <p class="track-desc">A 4-phase autonomous software delivery lifecycle in <code>allanbian1017/skills</code>: from architectural review boards and isolated TDD execution to multi-dimensional code quality and living narrative evolution.</p>
+                    <p class="track-desc">A 4-phase AI agent pipeline that goes from feature planning and architecture review to implementation, code review, and keeping documentation up to date as the system evolves.</p>
                 </div>
 
                 <div class="projects-stack">
@@ -180,7 +180,7 @@
                                 </a>
                             </div>
                             <div class="badge-list">
-                                <span class="pill-badge">Architecture Review Board</span>
+                                <span class="pill-badge">Architecture Review</span>
                                 <span class="pill-badge">PRD to RFC</span>
                                 <span class="pill-badge">Pre-Mortem Analysis</span>
                                 <span class="pill-badge">Vertical Slicing</span>
@@ -189,40 +189,38 @@
 
                         <h4 class="project-title">Feature Planning Pipeline</h4>
                         <p class="project-summary">
-                            Automated multi-agent architecture review board that shifts left—stress-testing requirements and architectural tradeoffs before writing code. 
-                            Orchestrates PM, Architect, Architecture Reviewer, and Engineer personas to produce production-grade PRDs, evaluate simpler baseline alternatives, 
-                            run pre-mortem failure analyses, and slice work vertically into atomic, dependency-mapped tasks.
+                            A multi-agent workflow for reviewing a feature before implementation starts. It brings together PM, Architect, Architecture Reviewer, and Engineer perspectives to clarify requirements, challenge architectural decisions, compare simpler alternatives, identify potential failure modes, and break the feature into implementable tasks.
                         </p>
 
                         <!-- Architecture Review Board Matrix -->
                         <div class="scorecard-panel">
                             <div class="scorecard-header">
                                 <span>Review Stage</span>
-                                <span>Gate Status / Mitigation</span>
+                                <span>Output</span>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>📋 PM Brief &amp; PRD</span>
+                                    <span>📋 Requirements & PRD</span>
                                 </div>
                                 <div class="scorecard-val val-pass">docs/prds/prd_feature.md [PASSED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>📐 Baseline RFC Comparison</span>
+                                    <span>📐 Architecture Review</span>
                                 </div>
-                                <div class="scorecard-val val-score">Simpler baseline evaluated &amp; Tradeoff checklist [VERIFIED]</div>
+                                <div class="scorecard-val val-score">Simpler alternatives and trade-offs evaluated [VERIFIED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🛡️ Red-Team Pre-Mortem</span>
+                                    <span>🛡️ Pre-Mortem</span>
                                 </div>
-                                <div class="scorecard-val val-amber">Outage failure mode mitigated (Score: 9.2 / 10) [APPROVED]</div>
+                                <div class="scorecard-val val-amber">Potential failure modes identified and mitigated [APPROVED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
                                     <span>⚡ Work Breakdown</span>
                                 </div>
-                                <div class="scorecard-val val-pass">Vertical slice dependency graph with acceptance criteria [READY]</div>
+                                <div class="scorecard-val val-pass">Vertical slices with dependencies and acceptance criteria [READY]</div>
                             </div>
                         </div>
 
@@ -252,22 +250,20 @@
                                 <span class="pill-badge">Worktree Isolation</span>
                                 <span class="pill-badge">RED / GREEN TDD</span>
                                 <span class="pill-badge">Scope Guardrail</span>
-                                <span class="pill-badge">Automated CI &amp; Merge</span>
+                                <span class="pill-badge">CI &amp; Merge</span>
                             </div>
                         </div>
 
                         <h4 class="project-title">Autonomous Developer Pipeline</h4>
                         <p class="project-summary">
-                            Autonomous end-to-end task execution engine operating inside isolated Git worktrees. 
-                            Constrains sub-agents strictly to approved task scopes, enforces atomic test-driven development (failing test RED → minimal code GREEN), 
-                            runs full verification test suites, and orchestrates CI gating, squash-merge, and worktree pruning.
+                            An autonomous implementation workflow that takes an approved task through development and delivery in an isolated Git worktree. It keeps each agent within the approved scope, follows RED / GREEN TDD, runs the full test suite, and completes the workflow through CI and merge.
                         </p>
 
                         <!-- Worktree TDD Lifecycle Console -->
                         <div class="scorecard-panel">
                             <div class="scorecard-header">
                                 <span>Execution Step</span>
-                                <span>Guardrail Status / Output</span>
+                                <span>Output</span>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
@@ -279,19 +275,19 @@
                                 <div class="scorecard-label">
                                     <span>🔴 🟢 RED / GREEN TDD</span>
                                 </div>
-                                <div class="scorecard-val val-pass">Failing test asserted → Minimal fix passed [VERIFIED]</div>
+                                <div class="scorecard-val val-pass">Failing test → Minimal implementation → Tests pass [VERIFIED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
                                     <span>🔒 Scope Guardrail</span>
                                 </div>
-                                <div class="scorecard-val val-score">Single vertical slice locked (0 task drift) [ENFORCED]</div>
+                                <div class="scorecard-val val-score">Implementation stays within the approved task [ENFORCED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🚀 CI &amp; Squash Delivery</span>
+                                    <span>🚀 CI &amp; Merge</span>
                                 </div>
-                                <div class="scorecard-val val-pass">$ gh pr merge --squash --delete-branch [AUTOMATED]</div>
+                                <div class="scorecard-val val-pass">gh pr merge --squash --delete-branch [AUTOMATED]</div>
                             </div>
                         </div>
 
@@ -319,24 +315,22 @@
                             </div>
                             <div class="badge-list">
                                 <span class="pill-badge">Agent Skill</span>
-                                <span class="pill-badge">Polyglot PR Routing</span>
-                                <span class="pill-badge">Continuous Learning</span>
+                                <span class="pill-badge">Language-Aware Review</span>
+                                <span class="pill-badge">Learns from Feedback</span>
                                 <span class="pill-badge">GitHub Native</span>
                             </div>
                         </div>
 
                         <h4 class="project-title">Code Review Skill</h4>
                         <p class="project-summary">
-                            Comprehensive multi-dimensional code quality &amp; preference learning agent capability. 
-                            Enforces language-specific style via hybrid rubrics, validates specification compliance against RFCs and plans, 
-                            and continuously learns team conventions directly from GitHub Pull Request review comments into persistent memory.
+                            An AI code review workflow that checks both code quality and whether the implementation matches the original RFC and plan. It uses language-specific review rubrics and learns team conventions from GitHub PR feedback so future reviews can apply what the team has learned over time.
                         </p>
 
                         <!-- Live Scorecard Demo -->
                         <div class="scorecard-panel">
                             <div class="scorecard-header">
                                 <span>Review Dimension</span>
-                                <span>Verification Status / Metric</span>
+                                <span>Output</span>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
@@ -352,15 +346,15 @@
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🧠 Preference Memory</span>
+                                    <span>🧠 Team Conventions</span>
                                 </div>
-                                <div class="scorecard-val val-memory">2 team conventions applied (preferences.md)</div>
+                                <div class="scorecard-val val-memory">2 learned conventions applied from preferences.md</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>⚡ Native Tooling</span>
+                                    <span>⚡ GitHub Integration</span>
                                 </div>
-                                <div class="scorecard-val" style="color: rgba(255,255,255,0.7);">$ gh pr review --comment &amp; inline high-severity</div>
+                                <div class="scorecard-val val-cyan">gh pr review with comments and inline findings</div>
                             </div>
                         </div>
 
@@ -387,49 +381,49 @@
                                 </a>
                             </div>
                             <div class="badge-list">
-                                <span class="pill-badge">5-Element Narrative Cycle</span>
-                                <span class="pill-badge">Zero-Script Shell Audit</span>
-                                <span class="pill-badge">100% Commit Ground Truth</span>
-                                <span class="pill-badge">ADR-001 Propose-then-Confirm</span>
+                                <span class="pill-badge">Development Narrative</span>
+                                <span class="pill-badge">Incremental Updates</span>
+                                <span class="pill-badge">Git-Verified History</span>
+                                <span class="pill-badge">Propose Before Writing</span>
                             </div>
                         </div>
 
                         <h4 class="project-title">Evolution Log Skill</h4>
                         <p class="project-summary">
-                            Automated engineering skill for generating, incrementally updating, and auditing living narrative development chronicles (<code>EvolutionLog.md</code>). 
-                            Synthesizes technical decisions from Git commits, PRDs, RFCs, and post-mortems through iterative problem-solving cycles (Problem → Options → Decision → Result → New Problem), 
-                            backed by zero-script agent-pure shell verification that audits Git objects to eliminate hallucinated phantom commits and broken references.
+                            An AI workflow for maintaining an EvolutionLog.md that explains how a system changes over time and why. It builds the narrative from Git history, PRDs, RFCs, and post-mortems, organizing each change around the problem, options considered, decision, result, and what came next.
+                            <br><br>
+                            Because the narrative is generated from multiple sources, the workflow also verifies commits and file references against the repository before updating the log.
                         </p>
 
                         <!-- Evolution Log Scorecard Panel -->
                         <div class="scorecard-panel">
                             <div class="scorecard-header">
-                                <span>Audit &amp; Lifecycle Dimension</span>
-                                <span>Engine Guardrail / Verification Status</span>
+                                <span>Lifecycle Step</span>
+                                <span>Output</span>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
                                     <span>🔍 Source Discovery</span>
                                 </div>
-                                <div class="scorecard-val val-cyan">git log, RFCs, RCAs &amp; Agent Skills (.agents/skills) [INDEXED]</div>
+                                <div class="scorecard-val val-cyan">Git history, PRDs, RFCs, ADRs, and post-mortems [INDEXED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🔁 5-Element Cycle</span>
+                                    <span>🔁 Narrative Cycle</span>
                                 </div>
-                                <div class="scorecard-val val-indigo">Problem → Options → Decision → Result → New Problem [COMPILED]</div>
+                                <div class="scorecard-val val-indigo">Problem → Options → Decision → Result → New Problem</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🛡️ Phantom Commit Audit</span>
+                                    <span>🛡️ History Verification</span>
                                 </div>
-                                <div class="scorecard-val val-pass">git cat-file -t: 100% commit &amp; path verification [0 PHANTOMS]</div>
+                                <div class="scorecard-val val-pass">Commits and referenced paths verified against Git [VERIFIED]</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>⚖️ ADR-001 Safety Gate</span>
+                                    <span>⚖️ Update Safety</span>
                                 </div>
-                                <div class="scorecard-val val-score">Agent-pure shell inspection &amp; propose-then-confirm [ENFORCED]</div>
+                                <div class="scorecard-val val-score">Proposed changes reviewed before EvolutionLog.md is updated [ENFORCED]</div>
                             </div>
                         </div>
 
@@ -456,7 +450,7 @@
                 <div class="track-header">
                     <span class="track-badge">Track 02 · Knowledge Systems</span>
                     <h3 class="track-title">Autonomous Content Intelligence</h3>
-                    <p class="track-desc">AI-powered personal content intelligence in <code>allanbian1017/knowledge-loop</code>: multi-agent parallel ingestion, autonomous grading, and closed-loop preference learning.</p>
+                    <p class="track-desc">A personal system I’ve been building to help me keep up with the things I care about without having to process everything myself. It uses multiple agents to collect and analyze content from newsletters, technical talks, discussions, and engineering articles, then filters them through a quality rubric and learns from what I find useful over time.</p>
                 </div>
 
                 <div class="projects-stack">
@@ -464,57 +458,53 @@
                     <div class="flagship-card card-purple">
                         <div class="card-topbar">
                             <div class="card-topbar-left">
-                                <span class="phase-pill phase-kl">Autonomous Platform</span>
                                 <a href="https://github.com/allanbian1017/knowledge-loop" target="_blank" class="repo-meta repo-meta-purple" rel="noopener noreferrer">
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                                     <span>allanbian1017/knowledge-loop</span>
                                 </a>
                             </div>
                             <div class="badge-list">
-                                <span class="pill-badge">6-Persona Multi-Agent Architecture</span>
-                                <span class="pill-badge">18 Skills (13 Built-in + 5 Managed)</span>
-                                <span class="pill-badge">Autonomous Quality Gate</span>
-                                <span class="pill-badge">Cross-Platform (AGY / Claude / Codex)</span>
+                                <span class="pill-badge">6 Agent Roles</span>
+                                <span class="pill-badge">Parallel Content Processing</span>
+                                <span class="pill-badge">Quality Rubric</span>
+                                <span class="pill-badge">Learns from Feedback</span>
                             </div>
                         </div>
 
                         <h4 class="project-title">Knowledge Loop</h4>
                         <p class="project-summary">
-                            Autonomous personal content intelligence engine powered by a 6-persona declarative subagent architecture and 18 skills (13 built-in, 5 managed). 
-                            Cross-platform compatible with Google Antigravity, Claude Code, and OpenAI Codex. 
-                            Dispatches concurrent worker agents to ingest Gmail newsletters, YouTube technical talks, Threads discussions, and engineering articles, 
-                            filters noise via a hard-veto 3-dimension rubric gate, and closes the loop with macro trend distillations and continuous preference calibration.
+                            The system runs across the AI tools I use and processes different content sources in parallel. Each piece of content goes through a rubric before being included, and the results are combined to identify recurring ideas and broader trends. My feedback is then used to refine what the system considers useful in future runs.
                         </p>
 
                         <!-- Multi-Agent Content Pipeline Console -->
                         <div class="scorecard-panel">
                             <div class="scorecard-header">
                                 <span>Pipeline Stage</span>
-                                <span>Engine &amp; Verification Status</span>
+                                <span>Output</span>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
                                     <span>🔍 Content Discovery</span>
                                 </div>
-                                <div class="scorecard-val val-cyan">Google Tasks (Delegate) &amp; Gmail (newsletter) [SYNCED]</div>
+                                <div class="scorecard-val val-cyan">Newsletters, technical talks, discussions, and engineering articles</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>⚡ Parallel Ingestion</span>
+                                    <span>⚡ Parallel Processing</span>
                                 </div>
-                                <div class="scorecard-val val-score">6 Subagent Personas synced across Antigravity, Claude &amp; Codex [ACTIVE]</div>
+                                <div class="scorecard-val val-score">Content analyzed concurrently across specialized agent roles</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🛡️ Autonomous Quality Gate</span>
+                                    <span>🛡️ Quality Filter</span>
                                 </div>
-                                <div class="scorecard-val val-pass">rubric_grader: Hard-Veto &amp; 3-Dim Rubric [PASSED]</div>
+                                <div class="scorecard-val val-pass">Content evaluated against a three-dimension rubric</div>
                             </div>
                             <div class="scorecard-row">
                                 <div class="scorecard-label">
-                                    <span>🧠 Closed-Loop Synthesis</span>
+                                    <span>🧠 Learning Loop</span>
                                 </div>
-                                <div class="scorecard-val val-memory">Macro distillation &amp; user preference calibration [LEARNED]</div>
+                                <div class="scorecard-val val-memory">Recurring themes identified and preferences refined over time</div>
                             </div>
                         </div>
 
